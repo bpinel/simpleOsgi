@@ -1,7 +1,6 @@
 package fr.ippon.osgi.simpleServer.impl;
 
 import fr.ippon.osgi.simpleServer.api.CurrencyConverter;
-import fr.ippon.osgi.simpleServer.impl.CurrencyConverterImpl;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceRegistration;
@@ -29,7 +28,7 @@ public class Activator implements BundleActivator {
         System.out.println("Currency converter module is shutting down");
         currencyConverterServiceRegistration.unregister();
     }
-
+/*
     public void onBindService(final CurrencyConverter sampleService) {
         if (sampleService == null) {
             System.out.println("sample service is null");
@@ -41,4 +40,5 @@ public class Activator implements BundleActivator {
     public void onUnbindService(final CurrencyConverter sampleService) {
         System.out.println("service unbound");
     }
+*/
 }
