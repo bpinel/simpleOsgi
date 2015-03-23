@@ -1,0 +1,12 @@
+h1. SYNOPSIS
+    OSGi is gaining traction in the Java community.
+    However, document is still sparse and far from being complete and efficient for a beginner to OSGi.
+    This simple module try to give some hints on the way module have to be set up and designed.
+
+h1. DESCRIPTION
+    This bundle is a standalone module with a very basic service of currency conversion
+
+h1.SEE ALSO
+    [http://karaf.apache.org/manual/latest/developers-guide/index.html\]
+    [http://www.hascode.com/2012/04/wiring-made-easy-using-osgi-blueprint-and-apache-karaf/\]
+    [http://java.dzone.com/articles/building-cxf-rest-service-osgi\]
