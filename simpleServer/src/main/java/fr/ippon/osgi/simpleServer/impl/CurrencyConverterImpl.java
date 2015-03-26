@@ -36,4 +36,7 @@ public class CurrencyConverterImpl implements CurrencyConverter{
         return value*rate;
     }
 
+    public void startUp() {
+        System.out.println(this.getClass().getName()+" is available");
+    }
 }

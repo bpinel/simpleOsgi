@@ -12,6 +12,8 @@ import org.osgi.framework.ServiceRegistration;
  */
 
 public class Activator implements BundleActivator {
+
+    private CurrencyConverter currencyConverter;
     /**
          * Implements BundleActivator.start().
          * @param bundleContext - the framework context for the bundle.
@@ -20,9 +22,6 @@ public class Activator implements BundleActivator {
         public void start(BundleContext bundleContext) throws Exception {
             System.out.println("Simple client module is starting");
 
-            // retrieve "manually"
-            ServiceReference reference = bundleContext.getServiceReference(CurrencyConverter.class.getName());
-            CurrencyConverter currencyConverter = (CurrencyConverter)bundleContext.getService(reference);
             double oneDollar = currencyConverter.getRate(1., "USD", "EUR");
 
             System.out.println("One dollar is "+oneDollar+" Euro");
@@ -36,4 +35,12 @@ public class Activator implements BundleActivator {
         public void stop(BundleContext bundleContext) throws Exception {
             System.out.println("Simple client module is shutting down");
         }
+
+    public CurrencyConverter getCurrencyConverter() {
+        return currencyConverter;
+    }
+
+    public void setCurrencyConverter(CurrencyConverter currencyConverter) {
+        this.currencyConverter = currencyConverter;
+    }
 }
