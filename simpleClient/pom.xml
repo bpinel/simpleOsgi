@@ -39,7 +39,7 @@
                     <instructions>
                         <Bundle-SymbolicName>${project.groupId}.${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Name>${project.artifactId}</Bundle-Name>
-                        <Bundle-Version>1.0.0</Bundle-Version>
+                        <Bundle-Version>${project.version}</Bundle-Version>
                         <Export-Package>fr.ippon.osgi.simpleClient.api</Export-Package>
                         <Private-Package>fr.ippon.osgi.simpleClient.impl</Private-Package>
                         <Bundle-Activator>fr.ippon.osgi.simpleClient.impl.Activator</Bundle-Activator>

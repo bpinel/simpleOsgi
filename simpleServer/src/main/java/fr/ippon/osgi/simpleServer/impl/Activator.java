@@ -28,17 +28,17 @@ public class Activator implements BundleActivator {
         System.out.println("Currency converter module is shutting down");
         currencyConverterServiceRegistration.unregister();
     }
-/*
+
     public void onBindService(final CurrencyConverter sampleService) {
         if (sampleService == null) {
             System.out.println("sample service is null");
         } else {
-            System.out.println("1 USD is " + sampleService.getRate(1.,"USD", "EUR")+ " EUR");
+            System.out.println("CurrencyConverterService bound");
         }
     }
 
     public void onUnbindService(final CurrencyConverter sampleService) {
-        System.out.println("service unbound");
+        System.out.println("CurrencyConverterService unbound");
     }
-*/
+
 }
