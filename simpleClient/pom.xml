@@ -5,11 +5,11 @@
   <parent>
     <groupId>fr.ippon.osgi</groupId>
     <artifactId>simpleOsgi</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0</version>
   </parent>
   <groupId>fr.ippon.osgi</groupId>
   <artifactId>simpleClient</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0.0</version>
   <name>simpleClient</name>
   <url>http://maven.apache.org</url>
   <properties>
@@ -64,7 +64,7 @@
         <dependency>
             <groupId>fr.ippon.osgi</groupId>
             <artifactId>simpleServer</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.0.0</version>
         </dependency>
     </dependencies>
 
