@@ -10,9 +10,16 @@
   http://cxf.apache.org/blueprint/jaxrs http://cxf.apache.org/schemas/blueprint/jaxrs.xsd
   http://cxf.apache.org/blueprint/core http://cxf.apache.org/schemas/blueprint/core.xsd">
 
+    <bean id="bundle-activator" class="fr.ippon.osgi.simpleClient.impl.Activator"/>
 
     <!-- This has to point to the service registered through serviceimpl.xml in the service.impl project -->
     <reference id="currencyConverterService"
                interface="fr.ippon.osgi.simpleServer.api.CurrencyConverter">
     </reference>
+
+    <bean id="currencyConverter" class="fr.ippon.osgi.simpleClient.client.CurrencyConverterClient" init-method="startUp">
+        <property name="currencyConverter" ref="currencyConverterService"/>
+    </bean>
+
+
 </blueprint>

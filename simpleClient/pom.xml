@@ -41,8 +41,6 @@
                         <Bundle-SymbolicName>${project.groupId}.${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Name>${project.artifactId}</Bundle-Name>
                         <Bundle-Version>${project.version}</Bundle-Version>
-                        <Export-Package>fr.ippon.osgi.simpleClient.api</Export-Package>
-                        <Private-Package>fr.ippon.osgi.simpleClient.impl</Private-Package>
                         <Bundle-Activator>fr.ippon.osgi.simpleClient.impl.Activator</Bundle-Activator>
                     </instructions>
                 </configuration>
@@ -57,11 +55,26 @@
             <version>3.8.1</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
-            <groupId>org.apache.felix</groupId>
-            <artifactId>org.osgi.core</artifactId>
-            <version>1.4.0</version>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.compendium</artifactId>
+            <version>4.2.0</version>
         </dependency>
+        <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.core</artifactId>
+            <version>4.2.0</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.6.1</version>
+        </dependency>
+
+
         <dependency>
             <groupId>fr.ippon.osgi</groupId>
             <artifactId>simpleServer</artifactId>

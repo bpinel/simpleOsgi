@@ -5,7 +5,6 @@
       <configuration manifestGenerationMode="OsmorcControlled" manifestLocation="" jarfileLocation="simpleServer-2.0.0.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="fr.ippon.osgi.simpleServer.impl.Activator" bundleSymbolicName="fr.ippon.osgi.simpleServer" bundleVersion="2.0.0" ignoreFilePattern="" useProjectDefaultManifestFileLocation="true" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
         <additionalProperties>
           <property key="Bundle-Name" value="simpleServer" />
-          <property key="Export-Package" value="fr.ippon.osgi.simpleServer.api" />
           <property key="Private-Package" value="fr.ippon.osgi.simpleServer.impl" />
           <property key="Export-Service" value="fr.ippon.osgi.simpleServer.api.CurrencyConverter" />
           <property key="Include-Resource" value="OSGI-INF/blueprint/serviceimpl.xml=$MODULE_DIR$/src/main/resources/OSGI-INF/blueprint/serviceimpl.xml,OSGI-INF/bundle.info=$MODULE_DIR$/src/main/resources/OSGI-INF/bundle.info" />
@@ -26,6 +25,8 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:3.8.1" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.felix:org.osgi.core:1.4.0" level="project" />
+    <orderEntry type="library" name="Maven: org.osgi:org.osgi.compendium:4.2.0" level="project" />
+    <orderEntry type="library" name="Maven: org.osgi:org.osgi.core:4.2.0" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.6.1" level="project" />
   </component>
 </module>

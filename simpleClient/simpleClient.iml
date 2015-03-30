@@ -5,8 +5,6 @@
       <configuration manifestGenerationMode="OsmorcControlled" manifestLocation="" jarfileLocation="simpleClient-2.0.0.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="fr.ippon.osgi.simpleClient.impl.Activator" bundleSymbolicName="fr.ippon.osgi.simpleClient" bundleVersion="2.0.0" ignoreFilePattern="" useProjectDefaultManifestFileLocation="true" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
         <additionalProperties>
           <property key="Bundle-Name" value="simpleClient" />
-          <property key="Export-Package" value="fr.ippon.osgi.simpleClient.api" />
-          <property key="Private-Package" value="fr.ippon.osgi.simpleClient.impl" />
           <property key="Include-Resource" value="OSGI-INF/blueprint/services.xml=$MODULE_DIR$/src/main/resources/OSGI-INF/blueprint/services.xml,OSGI-INF/bundle.info=$MODULE_DIR$/src/main/resources/OSGI-INF/bundle.info" />
         </additionalProperties>
         <additionalJARContents />
@@ -25,7 +23,9 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:3.8.1" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.felix:org.osgi.core:1.4.0" level="project" />
+    <orderEntry type="library" name="Maven: org.osgi:org.osgi.compendium:4.2.0" level="project" />
+    <orderEntry type="library" name="Maven: org.osgi:org.osgi.core:4.2.0" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.6.1" level="project" />
     <orderEntry type="module" module-name="simpleServer" />
   </component>
 </module>
